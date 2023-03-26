@@ -43,7 +43,7 @@
   </ul>  
   <a class="pure-menu-heading" href="/">
       <h1 class="title">Mr. Nullbody</h1>
-      <!-- <span></span> -->
+      <!-- <span>and his digital space</span> -->
   </a>
   <!-- 
   <img class="logo" id="logo" src="/favicon32.ico" alt="logo">
@@ -66,7 +66,19 @@
     <hr>
   </header>
   <div class="post-content">
-    <h1 id="原题"><a href="#原题" class="headerlink" title="原题"></a>原题</h1><p>设$O$、$H$分别是$\triangle ABC$的外心和垂心，点$A$关于直线$OH$的对称点是$P$，点$P$和点$A$不在直线$BC$的同侧，$E$、$F$分别在$AB$和$AC$上，满足$BE&#x3D;PC$，$CF&#x3D;PB$，直线$AP$、$OH$相交与点$K$，证明：$EK\perp FK$.<br><img src="2-original.webp" alt="如图"></p>
+    <h1 id="原题"><a href="#原题" class="headerlink" title="原题"></a>原题</h1><p>设$O$、$H$分别是$\triangle ABC$的外心和垂心，点$A$关于直线$OH$的对称点是$P$，点$P$和点$A$不在直线$BC$的同侧，$E$、$F$分别在$AB$和$AC$上，满足$BE=PC$，$CF=PB$，直线$AP$、$OH$相交与点$K$，证明：$EK\perp FK$.<br><img src="2-original.webp" alt="如图"></p>
+<h1 id="解答"><a href="#解答" class="headerlink" title="解答"></a>解答</h1><h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p><img src="2-1.webp" alt="如图"></p>
+<p>先证$P$关于$BC$中点$D$的对称点$P’$在$OH$上。<br>联结$AD$，交$OH$于$G$，$D$在$AP$上的投影为$D’$</p>
+<p>由欧拉线的性质，$AD$、$OH$的交点$G$为$\triangle ABC$的重心，结合$OH\perp AP$、$DD’\perp AP$，因此$\frac{AK}{KD’}=\frac{AG}{GD}=2$，于是$KD’=PD’$，得到$K$、$P$、$P’$到$D$的距离相同，所以$\angle PKP’=90^{\circ}$，即$P’$在$OH$上。</p>
+<h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><p><img src="2-2.webp" alt="如图"></p>
+<p>证明$\angle EP’F=90^{\circ}$。导角即可。</p>
+<script type="math/tex; mode=display">\begin{aligned}\angle EP'F&=360^{\circ}-\angle EP'B-\angle FP'C-\angle BP'C\\\\
+&=360^{\circ}-\frac 1 2(360^{\circ}-\angle EBP'-\angle FCP')-\angle BPC\\\\
+&=360^{\circ}-\frac 1 2(180^{\circ}-2\angle A)-(180^{\circ}-\angle A)\\\\
+&=90^{\circ}
+\end{aligned}</script><h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><p><img src="2-3.webp" alt="如图"></p>
+<p>证明$EKP’F$四点共圆。<br>取$EF$、$EC$中点$G$、$M$。在$AP$上取$J$使$PJ=2DG$。<br>可知$MQ\overset{\parallel}{=}\frac 1 2FC$，$MD\overset{\parallel}{=}\frac 1 2EB$，故$MQ=\frac 1 2BP$，$MD=\frac 1 2CP$，且$EB$，$FC$夹角为$\angle A$，与$\angle BPC$互补，得到$\triangle QMD \sim\triangle BPC$。</p>
+<p>经过导角可知$QD\parallel AP$，从而$Q$为$P’J$中点。于是$EP’FJ$为平行四边形，进而为矩形，$EP’FJ$四点共圆。结合$\angle JOP’=90^{\circ}=\angle JFP’$，$EKP’FJ$五点共圆，$Q$为圆心，故$\angle EP’F=90^{\circ}$。$\square$</p>
 
 
     <!-- 显示photos -->
@@ -82,7 +94,7 @@
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8E%9F%E9%A2%98"><span class="toc-text">原题</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8E%9F%E9%A2%98"><span class="toc-text">原题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A7%A3%E7%AD%94"><span class="toc-text">解答</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5"><span class="toc-text">第一步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5"><span class="toc-text">第二步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5"><span class="toc-text">第三步</span></a></li></ol></li></ol>
   </div>
 
 
