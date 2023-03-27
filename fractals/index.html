@@ -84,8 +84,8 @@
   <div class="post-content">
     
         <p>分形作品欣赏</p>
-<h1 id="Mandelbrot"><a href="#Mandelbrot" class="headerlink" title="Mandelbrot"></a>Mandelbrot</h1><p><img src="/fractals/Mandelbrot1.png"><br><img src="/fractals/Mandelbrot2.png"><br><img src="/fractals/Mandelbrot3.png"><br><img src="/fractals/Mandelbrot4.png"></p>
-<h1 id="Phoenix"><a href="#Phoenix" class="headerlink" title="Phoenix"></a>Phoenix</h1><p><img src="/fractals/Phoenix.png"></p>
+<h1 id="Mandelbrot"><a href="#Mandelbrot" class="headerlink" title="Mandelbrot"></a>Mandelbrot</h1><p><img src="/fractals/Mandelbrot1.webp"><br><img src="/fractals/Mandelbrot2.webp"><br><img src="/fractals/Mandelbrot3.webp"><br><img src="/fractals/Mandelbrot4.webp"></p>
+<h1 id="Phoenix"><a href="#Phoenix" class="headerlink" title="Phoenix"></a>Phoenix</h1><p><img src="/fractals/Phoenix.webp"></p>
 
       
   </div>
@@ -170,6 +170,23 @@
   
 
 
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<!--script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 </body>
 </html>
