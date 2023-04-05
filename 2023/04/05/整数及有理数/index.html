@@ -80,10 +80,10 @@
 <li>传递性：对$(a_1,b_1),(a_2,b_2),(a_3,b_3)\in\mathbb{N}^2$，若$(a_1,b_1)\sim(a_2,b_2)$，$(a_2,b_2)\sim(a_3,b_3)$，则有$(a_1,b_1)\sim(a_3,b_3)$</li>
 </ol>
 <p>其中1,2是平凡的，现在我们证明3.</p>
-<p>3的证明：由于$(a_1,b_1)\sim(a_2,b_2),(a_2,b_2)\sim(a_3,b_3)$，则可知<br>$$\begin{equation}\left{\begin{array}{l}<br>a_1+b_2&amp;&#x3D;b_1+a_2\<br>a_2+b_3&amp;&#x3D;b_2+a_3<br>\end{array}\right.\end{equation}$$<br>我们将两式相加<br>$$a_1+b_2+a_2+b_3&#x3D;b_1+a_2+b_2+a_3$$<br>利用加法交换律和结合律，我们得到<br>$$a_1+b_3+b_2+a_2&#x3D;b_1+a_3+b_2+a_2$$<br>再利用加法消去律，我们得到<br>$$a_1+b_3&#x3D;b_1+a_3$$<br>即为所求。</p>
+<p>3的证明：由于$(a_1,b_1)\sim(a_2,b_2),(a_2,b_2)\sim(a_3,b_3)$，则可知<br>$$\begin{cases}<br>a_1+b_2&amp;&#x3D;b_1+a_2\newline<br>a_2+b_3&amp;&#x3D;b_2+a_3<br>\end{cases}$$<br>我们将两式相加<br>$$a_1+b_2+a_2+b_3&#x3D;b_1+a_2+b_2+a_3$$<br>利用加法交换律和结合律，我们得到<br>$$a_1+b_3+b_2+a_2&#x3D;b_1+a_3+b_2+a_2$$<br>再利用加法消去律，我们得到<br>$$a_1+b_3&#x3D;b_1+a_3$$<br>即为所求。</p>
 <p>因此，我们可以构造$\mathbb{N}^2$的划分：记<br>$$[(a^\ast,b^\ast)]&#x3D;{(a,b)\in\mathbb{N}^2:(a,b)\sim(a^\ast,b^\ast)},(a^\ast,b^\ast)\in\mathbb{N}^2$$<br>则由1,2,3可知${[(a,b)]:(a,b)\in\mathbb{N}^2}$构成$\mathbb{N}^2$的划分，记为$\mathbb{Z}$。我们称集合$\mathbb{Z}$为整数集。</p>
 <p>现在我们定义$\mathbb{Z}$上的加法：对$[(a_1,b_1)],[(a_2,b_2)]\in\mathbb{Z}$，我们令<br>$$[(a_1,b_1)]+[(a_2,b_2)]&#x3D;[(a_1+a_2,b_1+b_2)]$$<br>接下来我们证明这里的加法是良定义的。所谓的“良定义”，指的是<br>$$\forall(a_1,b_1),(a_2,b_2)\in\mathbb{N}^2, (a_1+a_2,b_1+b_2)\in[(a_1,b_1)]+[(a_2,b_2)]$$<br>即$[(a_1,b_1)]$和$[(a_2,b_2)]$所确定的“和”是唯一的。</p>
-<p>证明：对$\forall(a_1,b_1)\in[(a_1^\ast,b_1^\ast)],(a_2,b_2)\in[(a_2^\ast,b_2^\ast)]$，我们有<br>$$\begin{equation}\left{\begin{array}{ll}a_1+b_1^\ast&#x3D;b_1+a_1^\ast\ a_2+b_2^\ast&#x3D;b_2+a_2^\ast\end{array}\right.\end{equation}$$<br>相加得<br>$$a_1+a_2+b_1^\ast+b_2^\ast&#x3D;b_1+b_2+a_1^\ast+a_2^\ast$$<br>即<br>$$(a_1+a_2,b_1+b_2)\sim(a_1^\ast+a_2^\ast,b_1^\ast+b_2^\ast)\Rightarrow(a_1+a_2,b_1+b_2)\in[(a_1^\ast+a_2^\ast,b_1^\ast+b_2^\ast)]$$</p>
+<p>证明：对$\forall(a_1,b_1)\in[(a_1^\ast,b_1^\ast)],(a_2,b_2)\in[(a_2^\ast,b_2^\ast)]$，我们有<br>$$\begin{cases}a_1+b_1^\ast&#x3D;b_1+a_1^\ast\newline a_2+b_2^\ast&#x3D;b_2+a_2^\ast\end{cases}$$<br>相加得<br>$$a_1+a_2+b_1^\ast+b_2^\ast&#x3D;b_1+b_2+a_1^\ast+a_2^\ast$$<br>即<br>$$(a_1+a_2,b_1+b_2)\sim(a_1^\ast+a_2^\ast,b_1^\ast+b_2^\ast)\Rightarrow(a_1+a_2,b_1+b_2)\in[(a_1^\ast+a_2^\ast,b_1^\ast+b_2^\ast)]$$</p>
 <p>至此，我们定义了$\mathbb{Z}$上的加法，且容易验证这里的加法满足交换律、结合律和消去律。</p>
 <p>$\mathbb{Z}$上的减法可以类似地定义：对$[(a_1,b_1)],[(a_2,b_2)]\in\mathbb{Z}$，我们令$[(a_1,b_1)]-[(a_2,b_2)]&#x3D;[(a_1+b_2,b_1+a_2)]$。</p>
 <p>接下来我们可以在$\mathbb{N}$的加法和乘法的基础上定义$\mathbb{Z}$上的乘法：对$[(a_1,b_1)],[(a_2,b_2)]\in\mathbb{Z}$，我们令$[(a_1,b_1)]\cdot[(a_2,b_2)]&#x3D;[(a_1\cdot a_2+b_1\cdot b_2,b_1\cdot a_2+b_2\cdot a_1)]$。容易验证，这里的乘法是良定义的且满足交换律和结合律，同时$\mathbb{Z}$上的乘法关于加法有分配律，即对$[(a_1,b_1)],[(a_2,b_2)],[(a_3,b_3)]\in\mathbb{Z}$有<br>$$[(a_1,b_1)]\cdot([(a_2,b_2)]+[(a_3,b_3)])&#x3D;[(a_1,b_1)]\cdot[(a_2,b_2)]+[(a_1,b_1)]\cdot[(a_3,b_3)]$$<br>这是容易验证的。</p>
@@ -96,7 +96,7 @@
 <li>传递性：对$(a_1,b_1),(a_2,b_2),(a_3,b_3)\in\mathbb{Z}\times\mathbb{Z}^\ast$，若$(a_1,b_1)\backsim(a_2,b_2)$，$(a_2,b_2)\backsim(a_3,b_3)$，则有$(a_1,b_1)\backsim(a_3,b_3)$</li>
 </ol>
 <p>其中1,2是平凡的，现在我们证明3.</p>
-<p>3的证明：由于$(a_1,b_1)\backsim(a_2,b_2),(a_2,b_2)\backsim(a_3,b_3)$，则可知<br>$$\begin{equation}\left{\begin{array}{l}<br>a_1\cdot b_2&amp;&#x3D;b_1\cdot a_2\<br>a_2\cdot b_3&amp;&#x3D;b_2\cdot a_3<br>\end{array}\right.\end{equation}$$<br>我们将两式相乘<br>$$a_1\cdot b_2\cdot a_2\cdot b_3&#x3D;b_1\cdot a_2\cdot b_2\cdot a_3$$<br>利用乘法交换律和结合律，我们得到<br>$$a_1\cdot b_3\cdot b_2\cdot a_2&#x3D;b_1\cdot a_3\cdot b_2\cdot a_2$$<br>由于$b_2\in\mathbb{Z}^\ast$，则$b_2\neq[(1,1)]$，我们现在讨论$a_2$：</p>
+<p>3的证明：由于$(a_1,b_1)\backsim(a_2,b_2),(a_2,b_2)\backsim(a_3,b_3)$，则可知<br>$$\begin{cases}<br>a_1\cdot b_2&amp;&#x3D;b_1\cdot a_2\newline<br>a_2\cdot b_3&amp;&#x3D;b_2\cdot a_3<br>\end{cases}$$<br>我们将两式相乘<br>$$a_1\cdot b_2\cdot a_2\cdot b_3&#x3D;b_1\cdot a_2\cdot b_2\cdot a_3$$<br>利用乘法交换律和结合律，我们得到<br>$$a_1\cdot b_3\cdot b_2\cdot a_2&#x3D;b_1\cdot a_3\cdot b_2\cdot a_2$$<br>由于$b_2\in\mathbb{Z}^\ast$，则$b_2\neq[(1,1)]$，我们现在讨论$a_2$：</p>
 <ul>
 <li>$a_2&#x3D;[(1,1)]$，则$a_1&#x3D;a_2&#x3D;a_3&#x3D;[(1,1)]$，于是$a_1\cdot b_3&#x3D;b_1\cdot a_3$。</li>
 <li>$a_2\neq[(1,1)]$，即$a_2\in\mathbb{Z}^\ast$，则利用乘法消去律，我们得到$a_1\cdot b_3&#x3D;b_1\cdot a_3$</li>
