@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#202020"/>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  
+    <meta name="keywords" content="" />
+  
+
+  
+    <meta name="description" content="整数及有理数" />
+  
+  
+  <link rel="icon" type="image/x-icon" href="/favicon32.ico">
+  <title>整数及有理数 [ Mr. Nullbody ]</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css">
+    
+      <link rel="stylesheet" href="/css/microb.css">
+    
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  <nav class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+  <ul class="pure-menu-list float-r clearfix">
+    
+      <li class="pure-menu-item toc-menu">
+        <a id="menu-main-post" class="pure-menu-link" href="javascript:;">
+          <img class="menu-icon" src="/favicon32.ico" alt="MENU">
+        </a>
+      </li>
+    
+  </ul>  
+  <a class="pure-menu-heading" href="/">
+      <h1 class="title">Mr. Nullbody</h1>
+      <!-- <span>and his digital space</span> -->
+  </a>
+  <!-- 
+  <img class="logo" id="logo" src="/favicon32.ico" alt="logo">
+   -->
+</nav>
+
+
+  <div class="container" id="content-outer">
+    <div class="inner" id="content-inner">
+      <article class="post" id="post">
+  <header class="post-header text-center">
+    <h1 class="title">
+      整数及有理数
+    </h1>
+    
+    <time class="time" datetime="2023-04-05T05:36:48.000Z">
+      2023-04-05
+    </time>
+    
+    <hr>
+  </header>
+  <div class="post-content">
+    <blockquote>
+<p>Throughout the ages mathematicians have considered their objects, such as numbers, points, etc.,as substantial things in themselves. Since these entities had always defied attempts at an adequate description, it slowly dawned on the mathematicians of the nineteenth century that the question of the meaning of these objects as substantial things does not make sense within mathematics, if at all. The only relevant assertions concerning them do not refer to substantial reality; they state only the interrelations between mathematically “undefined objects” and the rules governing operations with them. What points, lines, numbers “actually” <em>are</em> cannot and need not be discussed in mathematical science. What matters and what corresponds to “verifiable” fact is structure and relationship, that two points determine a line, that numbers combine according to certain rules to form other numbers, etc. A clear insight into the necessity of a dissubstantiation of elementary mathematical concepts has been one of the most important and fruitful results of the modern postulational development.</p>
+</blockquote>
+<blockquote>
+<p>From <em>What is Mathematics?</em></p>
+</blockquote>
+<h1 id="mathbb-Z-的定义及其上的运算"><a href="#mathbb-Z-的定义及其上的运算" class="headerlink" title="$\mathbb{Z}$的定义及其上的运算"></a>$\mathbb{Z}$的定义及其上的运算</h1><p>在$\mathbb{N}$和$\mathbb{N}$上的加法运算“$+$”的基础上，我们考虑$\mathbb{N}^2&#x3D;\mathbb{N}\times\mathbb{N}$上的关系$\sim$：对于$(a_1,b_1),(a_2,b_2)\in \mathbb{N}^2$，我们称$(a_1,b_1)\sim(a_2,b_2)$当且仅当$a_1+b_2&#x3D;b_1+a_2$。</p>
+<p>则我们可以得出关于$\sim$的如下性质：</p>
+<ol>
+<li>反身性：对$(a,b)\in\mathbb{N}^2$，我们有$(a,b)\sim(a,b)$；</li>
+<li>对称性：对$(a_1,b_1),(a_2,b_2)\in\mathbb{N}^2$，若$(a_1,b_1)\sim(a_2,b_2)$，则有$(a_2,b_2)\sim(a_1,b_1)$</li>
+<li>传递性：对$(a_1,b_1),(a_2,b_2),(a_3,b_3)\in\mathbb{N}^2$，若$(a_1,b_1)\sim(a_2,b_2)$，$(a_2,b_2)\sim(a_3,b_3)$，则有$(a_1,b_1)\sim(a_3,b_3)$</li>
+</ol>
+<p>其中1,2是平凡的，现在我们证明3.</p>
+<p>3的证明：由于$(a_1,b_1)\sim(a_2,b_2),(a_2,b_2)\sim(a_3,b_3)$，则可知<br>$$\begin{equation}\left{\begin{array}{l}<br>a_1+b_2&amp;&#x3D;b_1+a_2\<br>a_2+b_3&amp;&#x3D;b_2+a_3<br>\end{array}\right.\end{equation}$$<br>我们将两式相加<br>$$a_1+b_2+a_2+b_3&#x3D;b_1+a_2+b_2+a_3$$<br>利用加法交换律和结合律，我们得到<br>$$a_1+b_3+b_2+a_2&#x3D;b_1+a_3+b_2+a_2$$<br>再利用加法消去律，我们得到<br>$$a_1+b_3&#x3D;b_1+a_3$$<br>即为所求。</p>
+<p>因此，我们可以构造$\mathbb{N}^2$的划分：记<br>$$[(a^\ast,b^\ast)]&#x3D;{(a,b)\in\mathbb{N}^2:(a,b)\sim(a^\ast,b^\ast)},(a^\ast,b^\ast)\in\mathbb{N}^2$$<br>则由1,2,3可知${[(a,b)]:(a,b)\in\mathbb{N}^2}$构成$\mathbb{N}^2$的划分，记为$\mathbb{Z}$。我们称集合$\mathbb{Z}$为整数集。</p>
+<p>现在我们定义$\mathbb{Z}$上的加法：对$[(a_1,b_1)],[(a_2,b_2)]\in\mathbb{Z}$，我们令<br>$$[(a_1,b_1)]+[(a_2,b_2)]&#x3D;[(a_1+a_2,b_1+b_2)]$$<br>接下来我们证明这里的加法是良定义的。所谓的“良定义”，指的是<br>$$\forall(a_1,b_1),(a_2,b_2)\in\mathbb{N}^2, (a_1+a_2,b_1+b_2)\in[(a_1,b_1)]+[(a_2,b_2)]$$<br>即$[(a_1,b_1)]$和$[(a_2,b_2)]$所确定的“和”是唯一的。</p>
+<p>证明：对$\forall(a_1,b_1)\in[(a_1^\ast,b_1^\ast)],(a_2,b_2)\in[(a_2^\ast,b_2^\ast)]$，我们有<br>$$\begin{equation}\left{\begin{array}{ll}a_1+b_1^\ast&#x3D;b_1+a_1^\ast\ a_2+b_2^\ast&#x3D;b_2+a_2^\ast\end{array}\right.\end{equation}$$<br>相加得<br>$$a_1+a_2+b_1^\ast+b_2^\ast&#x3D;b_1+b_2+a_1^\ast+a_2^\ast$$<br>即<br>$$(a_1+a_2,b_1+b_2)\sim(a_1^\ast+a_2^\ast,b_1^\ast+b_2^\ast)\Rightarrow(a_1+a_2,b_1+b_2)\in[(a_1^\ast+a_2^\ast,b_1^\ast+b_2^\ast)]$$</p>
+<p>至此，我们定义了$\mathbb{Z}$上的加法，且容易验证这里的加法满足交换律、结合律和消去律。</p>
+<p>$\mathbb{Z}$上的减法可以类似地定义：对$[(a_1,b_1)],[(a_2,b_2)]\in\mathbb{Z}$，我们令$[(a_1,b_1)]-[(a_2,b_2)]&#x3D;[(a_1+b_2,b_1+a_2)]$。</p>
+<p>接下来我们可以在$\mathbb{N}$的加法和乘法的基础上定义$\mathbb{Z}$上的乘法：对$[(a_1,b_1)],[(a_2,b_2)]\in\mathbb{Z}$，我们令$[(a_1,b_1)]\cdot[(a_2,b_2)]&#x3D;[(a_1\cdot a_2+b_1\cdot b_2,b_1\cdot a_2+b_2\cdot a_1)]$。容易验证，这里的乘法是良定义的且满足交换律和结合律，同时$\mathbb{Z}$上的乘法关于加法有分配律，即对$[(a_1,b_1)],[(a_2,b_2)],[(a_3,b_3)]\in\mathbb{Z}$有<br>$$[(a_1,b_1)]\cdot([(a_2,b_2)]+[(a_3,b_3)])&#x3D;[(a_1,b_1)]\cdot[(a_2,b_2)]+[(a_1,b_1)]\cdot[(a_3,b_3)]$$<br>这是容易验证的。</p>
+<h1 id="mathbb-Q-的定义及其上的运算"><a href="#mathbb-Q-的定义及其上的运算" class="headerlink" title="$\mathbb{Q}$的定义及其上的运算"></a>$\mathbb{Q}$的定义及其上的运算</h1><p>记$\mathbb{Z}^\ast &#x3D;\mathbb{Z}\backslash{[(1,1)]}$。注意到$\mathbb{Z}^\ast$上有消去律。</p>
+<p>在$\mathbb{Z}$和$\mathbb{Z}$上的乘法运算“$\cdot$”的基础上，我们考虑$\mathbb{Z}\times\mathbb{Z}^\ast$上的关系$\backsim$：对于$(a_1,b_1),(a_2,b_2)\in\mathbb{Z}\times\mathbb{Z}^\ast$，我们称$(a_1,b_1)\backsim(a_2,b_2)$当且仅当$a_1\cdot b_2&#x3D;b_1\cdot a_2$。</p>
+<p>则我们可以得出关于$\backsim$的如下性质：</p>
+<ol>
+<li>反身性：对$(a,b)\in\mathbb{Z}\times\mathbb{Z}^\ast$，我们有$(a,b)\backsim(a,b)$；</li>
+<li>对称性：对$(a_1,b_1),(a_2,b_2)\in\mathbb{Z}\times\mathbb{Z}^\ast$，若$(a_1,b_1)\backsim(a_2,b_2)$，则有$(a_2,b_2)\backsim(a_1,b_1)$</li>
+<li>传递性：对$(a_1,b_1),(a_2,b_2),(a_3,b_3)\in\mathbb{Z}\times\mathbb{Z}^\ast$，若$(a_1,b_1)\backsim(a_2,b_2)$，$(a_2,b_2)\backsim(a_3,b_3)$，则有$(a_1,b_1)\backsim(a_3,b_3)$</li>
+</ol>
+<p>其中1,2是平凡的，现在我们证明3.</p>
+<p>3的证明：由于$(a_1,b_1)\backsim(a_2,b_2),(a_2,b_2)\backsim(a_3,b_3)$，则可知<br>$$\begin{equation}\left{\begin{array}{l}<br>a_1\cdot b_2&amp;&#x3D;b_1\cdot a_2\<br>a_2\cdot b_3&amp;&#x3D;b_2\cdot a_3<br>\end{array}\right.\end{equation}$$<br>我们将两式相乘<br>$$a_1\cdot b_2\cdot a_2\cdot b_3&#x3D;b_1\cdot a_2\cdot b_2\cdot a_3$$<br>利用乘法交换律和结合律，我们得到<br>$$a_1\cdot b_3\cdot b_2\cdot a_2&#x3D;b_1\cdot a_3\cdot b_2\cdot a_2$$<br>由于$b_2\in\mathbb{Z}^\ast$，则$b_2\neq[(1,1)]$，我们现在讨论$a_2$：</p>
+<ul>
+<li>$a_2&#x3D;[(1,1)]$，则$a_1&#x3D;a_2&#x3D;a_3&#x3D;[(1,1)]$，于是$a_1\cdot b_3&#x3D;b_1\cdot a_3$。</li>
+<li>$a_2\neq[(1,1)]$，即$a_2\in\mathbb{Z}^\ast$，则利用乘法消去律，我们得到$a_1\cdot b_3&#x3D;b_1\cdot a_3$</li>
+</ul>
+<p>综上，即得所求。</p>
+<p>因此，我们可以构造$\mathbb{Z}\times\mathbb{Z}^\ast$的划分：记<br>$$[(a^\ast,b^\ast)]&#x3D;{(a,b)\in\mathbb{Z}\times\mathbb{Z}^\ast:(a,b)\backsim(a^\ast,b^\ast)},(a^\ast,b^\ast)\in\mathbb{Z}\times\mathbb{Z}^\ast$$<br>则由1,2,3可知${[(a,b)]:(a,b)\in\mathbb{Z}\times\mathbb{Z}^\ast}$构成$\mathbb{Z}\times\mathbb{Z}^\ast$的划分，记为$\mathbb{Q}$。我们称集合$\mathbb{Q}$为有理数集。</p>
+<p>类似地可以定义$\mathbb{Q}$上的加法和乘法，有类似的性质。</p>
+
+
+    <!-- 显示photos -->
+    
+
+  </div>
+  <div class="post-tags">
+    
+  </div>
+</article>
+  
+    <div class="post-nav">
+      <div class="post-nav-item post-nav-next">
+        
+          <a href="../../../03/26/%E5%87%A0%E4%BD%95%E7%A6%81%E4%B9%A62/" rel="next" title="几何禁书2">
+            <span>〈 </span> 几何禁书2
+          </a>
+        
+      </div>
+  
+      <div class="post-nav-item post-nav-prev">
+        
+      </div>
+    </div>
+  
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#mathbb-Z-%E7%9A%84%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%85%B6%E4%B8%8A%E7%9A%84%E8%BF%90%E7%AE%97"><span class="toc-text">$\mathbb{Z}$的定义及其上的运算</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mathbb-Q-%E7%9A%84%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%85%B6%E4%B8%8A%E7%9A%84%E8%BF%90%E7%AE%97"><span class="toc-text">$\mathbb{Q}$的定义及其上的运算</span></a></li></ol>
+  </div>
+
+
+    </div>
+
+    
+
+  </div>
+
+  <footer class="footer text-center">
+    <div id="bottom-inner">
+      
+        <a href="http://hexo.io" target="_blank" class="footer-link">Hexo</a>
+      
+        <a href="https://github.com/microacup/hexo-theme-micorb" target="_blank" class="footer-link">Theme microb</a>
+      
+    </div>
+  </footer>
+  
+
+<script>
+  var titleTime,originTitle=document.title;document.addEventListener("visibilitychange",function(){document.hidden?(document.title="[闷声发大财中...] "+originTitle,clearTimeout(titleTime)):(document.title="[+1s] "+originTitle,titleTime=setTimeout(function(){document.title=originTitle},2e3))});
+</script>
+
+<script>
+  (function (window, document) {
+    window.requestAnimationFrame = (function () {
+      return window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function (callback) {
+          setTimeout(callback, 1000 / 60);
+        }
+    })();
+
+    function init() {
+      addMenuEvent();
+    }
+    init();
+
+    function addMenuEvent() {
+      var menu = document.getElementById('menu-main-post');
+      if (menu) {
+        var toc = document.getElementById('toc');
+        menu.title = toc ? '目录' : '回到顶部';
+        menu.onclick = function () {
+          if (toc) {
+            if (toc.style.display == 'block') {
+              toc.style.display = 'none';
+            } else {
+              toc.style.display = 'block';
+            }
+          } else {
+            returnTop();
+          }
+        };
+      }
+    }
+
+    var timer = null;
+
+    function returnTop() {
+      cancelAnimationFrame(timer);
+      timer = requestAnimationFrame(function fn() {
+        var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if (oTop > 0) {
+          document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
+          timer = requestAnimationFrame(fn);
+        } else {
+          cancelAnimationFrame(timer);
+        }
+      });
+    }
+
+  })(window, document);
+</script>
+
+
+  
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<!--script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>
