@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
         <link rel="stylesheet" href="css/math_style.css">
         <title>Site</title>
     </head>
@@ -15,7 +16,1384 @@
                 </ul>
             </nav>
         </header>
-        <main></main>
+        <main><div class="btex-output">
+            <p>这是一个测试</p>
+            <p>
+            <div class="toc">
+                <div class="toctitle">目录</div>
+                <ul>
+                    <li class="toclevel-1"><a href="#%E7%BE%A4"><span class="tocnumber"><btex-ref
+                                    data-key="--prefix--"></btex-ref>1</span><span class="toctext">群</span></a></li>
+                    <li class="toclevel-1"><a href="#%E5%AD%90%E7%BE%A4"><span class="tocnumber"><btex-ref
+                                    data-key="--prefix--"></btex-ref>2</span><span class="toctext">子群</span></a></li>
+                    <li class="toclevel-1"><a href="#%E4%B9%A0%E9%A2%98"><span class="tocnumber"><btex-ref
+                                    data-key="--prefix--"></btex-ref>3</span><span class="toctext">习题</span></a></li>
+                </ul>
+            </div>
+            <h2 id="群"><span class="header-number"><btex-ref data-key="--prefix--"></btex-ref>1</span>群</h2>
+            </p>
+            <p>当我们研究集合 <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                    class="mord mathnormal">G</span></span></span></span></span> 关于某个运算 <span
+                    class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                class="base"><span class="strut" style="height: 0.4653em;"></span><span
+                                    class="mord">⋆</span></span></span></span></span> 的结构时, 我们往往关注如下的性质: </p>
+            <table class="list">
+                <tr class="list-item">
+                    <td class="list-item-label">
+                        <p>1.</p>
+                    </td>
+                    <td class="list-item-content">
+                        <p>结合律: 对任意 <span class="inline-math"><span class="katex"><span class="katex-html"
+                                        aria-hidden="true"><span class="base"><span class="strut"
+                                                style="height: 0.8889em; vertical-align: -0.1944em;"></span><span
+                                                class="mord mathnormal">a</span><span class="mpunct">,</span><span
+                                                class="mspace" style="margin-right: 0.1667em;"></span><span
+                                                class="mord mathnormal">b</span><span class="mpunct">,</span><span
+                                                class="mspace" style="margin-right: 0.1667em;"></span><span
+                                                class="mord mathnormal">c</span><span class="mspace"
+                                                style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                                class="mord mathnormal">G</span></span></span></span></span>, 有 <span
+                                class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                            class="base"><span class="strut"
+                                                style="height: 1em; vertical-align: -0.25em;"></span><span
+                                                class="mopen">(</span><span class="mord mathnormal">a</span><span
+                                                class="mspace" style="margin-right: 0.2222em;"></span><span
+                                                class="mbin">⋆</span><span class="mspace"
+                                                style="margin-right: 0.2222em;"></span></span><span class="base"><span
+                                                class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                                                class="mord mathnormal">b</span><span class="mclose">)</span><span
+                                                class="mspace" style="margin-right: 0.2222em;"></span><span
+                                                class="mbin">⋆</span><span class="mspace"
+                                                style="margin-right: 0.2222em;"></span></span><span class="base"><span
+                                                class="strut" style="height: 0.4306em;"></span><span
+                                                class="mord mathnormal">c</span><span class="mspace"
+                                                style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.4653em;"></span><span
+                                                class="mord mathnormal">a</span><span class="mspace"
+                                                style="margin-right: 0.2222em;"></span><span class="mbin">⋆</span><span
+                                                class="mspace" style="margin-right: 0.2222em;"></span></span><span
+                                            class="base"><span class="strut"
+                                                style="height: 1em; vertical-align: -0.25em;"></span><span
+                                                class="mopen">(</span><span class="mord mathnormal">b</span><span
+                                                class="mspace" style="margin-right: 0.2222em;"></span><span
+                                                class="mbin">⋆</span><span class="mspace"
+                                                style="margin-right: 0.2222em;"></span></span><span class="base"><span
+                                                class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                                                class="mord mathnormal">c</span><span
+                                                class="mclose">)</span></span></span></span></span>. </p>
+                    </td>
+                </tr>
+                <tr class="list-item">
+                    <td class="list-item-label">
+                        <p>2.</p>
+                    </td>
+                    <td class="list-item-content">
+                        <p>具有恒等元 (幺元) : 存在 <span class="inline-math"><span class="katex"><span class="katex-html"
+                                        aria-hidden="true"><span class="base"><span class="strut"
+                                                style="height: 0.5782em; vertical-align: -0.0391em;"></span><span
+                                                class="mord mathnormal">e</span><span class="mspace"
+                                                style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                                class="mord mathnormal">G</span></span></span></span></span> 满足, 对任意 <span
+                                class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                            class="base"><span class="strut"
+                                                style="height: 0.5782em; vertical-align: -0.0391em;"></span><span
+                                                class="mord mathnormal">a</span><span class="mspace"
+                                                style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                                class="mord mathnormal">G</span></span></span></span></span>, <span
+                                class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                            class="base"><span class="strut" style="height: 0.4653em;"></span><span
+                                                class="mord mathnormal">a</span><span class="mspace"
+                                                style="margin-right: 0.2222em;"></span><span class="mbin">⋆</span><span
+                                                class="mspace" style="margin-right: 0.2222em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.4306em;"></span><span
+                                                class="mord mathnormal">e</span><span class="mspace"
+                                                style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.4653em;"></span><span
+                                                class="mord mathnormal">e</span><span class="mspace"
+                                                style="margin-right: 0.2222em;"></span><span class="mbin">⋆</span><span
+                                                class="mspace" style="margin-right: 0.2222em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.4306em;"></span><span
+                                                class="mord mathnormal">a</span><span class="mspace"
+                                                style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.4306em;"></span><span
+                                                class="mord mathnormal">e</span></span></span></span></span>. </p>
+                    </td>
+                </tr>
+                <tr class="list-item">
+                    <td class="list-item-label">
+                        <p>3.</p>
+                    </td>
+                    <td class="list-item-content">
+                        <p>元素具有逆: 在恒等元 <span class="inline-math"><span class="katex"><span class="katex-html"
+                                        aria-hidden="true"><span class="base"><span class="strut"
+                                                style="height: 0.4306em;"></span><span
+                                                class="mord mathnormal">e</span></span></span></span></span> 存在的前提下, 对某个
+                            <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                            class="base"><span class="strut"
+                                                style="height: 0.5782em; vertical-align: -0.0391em;"></span><span
+                                                class="mord mathnormal">a</span><span class="mspace"
+                                                style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                                class="mord mathnormal">G</span></span></span></span></span>, 如果存在 <span
+                                class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                            class="base"><span class="strut"
+                                                style="height: 0.7335em; vertical-align: -0.0391em;"></span><span
+                                                class="mord mathnormal">b</span><span class="mspace"
+                                                style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                                class="mord mathnormal">G</span></span></span></span></span> 使得 <span
+                                class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                            class="base"><span class="strut" style="height: 0.4653em;"></span><span
+                                                class="mord mathnormal">a</span><span class="mspace"
+                                                style="margin-right: 0.2222em;"></span><span class="mbin">⋆</span><span
+                                                class="mspace" style="margin-right: 0.2222em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.6944em;"></span><span
+                                                class="mord mathnormal">b</span><span class="mspace"
+                                                style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.6944em;"></span><span
+                                                class="mord mathnormal">b</span><span class="mspace"
+                                                style="margin-right: 0.2222em;"></span><span class="mbin">⋆</span><span
+                                                class="mspace" style="margin-right: 0.2222em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.4306em;"></span><span
+                                                class="mord mathnormal">a</span><span class="mspace"
+                                                style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.4306em;"></span><span
+                                                class="mord mathnormal">e</span></span></span></span></span>, 那么 <span
+                                class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                            class="base"><span class="strut" style="height: 0.4306em;"></span><span
+                                                class="mord mathnormal">a</span></span></span></span></span> 具有逆 <span
+                                class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                            class="base"><span class="strut" style="height: 0.6944em;"></span><span
+                                                class="mord mathnormal">b</span></span></span></span></span>. </p>
+                    </td>
+                </tr>
+                <tr class="list-item">
+                    <td class="list-item-label">
+                        <p>4.</p>
+                    </td>
+                    <td class="list-item-content">
+                        <p>交换律: 对任意 <span class="inline-math"><span class="katex"><span class="katex-html"
+                                        aria-hidden="true"><span class="base"><span class="strut"
+                                                style="height: 0.8889em; vertical-align: -0.1944em;"></span><span
+                                                class="mord mathnormal">a</span><span class="mpunct">,</span><span
+                                                class="mspace" style="margin-right: 0.1667em;"></span><span
+                                                class="mord mathnormal">b</span><span class="mspace"
+                                                style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                                class="mord mathnormal">G</span></span></span></span></span>, 有 <span
+                                class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                            class="base"><span class="strut" style="height: 0.4653em;"></span><span
+                                                class="mord mathnormal">a</span><span class="mspace"
+                                                style="margin-right: 0.2222em;"></span><span class="mbin">⋆</span><span
+                                                class="mspace" style="margin-right: 0.2222em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.6944em;"></span><span
+                                                class="mord mathnormal">b</span><span class="mspace"
+                                                style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.6944em;"></span><span
+                                                class="mord mathnormal">b</span><span class="mspace"
+                                                style="margin-right: 0.2222em;"></span><span class="mbin">⋆</span><span
+                                                class="mspace" style="margin-right: 0.2222em;"></span></span><span
+                                            class="base"><span class="strut" style="height: 0.4306em;"></span><span
+                                                class="mord mathnormal">a</span></span></span></span></span>. </p>
+                    </td>
+                </tr>
+            </table>
+            <p>对于性质良好的组合 <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                                    class="mopen">(</span><span class="mord mathnormal">G</span><span
+                                    class="mpunct">,</span><span class="mspace" style="margin-right: 0.1667em;"></span><span
+                                    class="mord">⋆</span><span class="mclose">)</span></span></span></span></span>,
+                我们有特殊的名称. </p>
+            <div class="p">
+                <div class="block style-b">
+                    <p><span style="font-weight:bold" class="item-header">定义 <btex-ref
+                                data-key="--prefix--"></btex-ref>1.1.</span> 如果 <span class="inline-math"><span
+                                class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                            class="strut" style="height: 0.6833em;"></span><span
+                                            class="mord mathnormal">G</span></span></span></span></span> 上的运算 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut" style="height: 0.4653em;"></span><span
+                                            class="mord">⋆</span></span></span></span></span> 具有结合律, 我们称元组 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut"
+                                            style="height: 1em; vertical-align: -0.25em;"></span><span
+                                            class="mopen">(</span><span class="mord mathnormal">G</span><span
+                                            class="mpunct">,</span><span class="mspace"
+                                            style="margin-right: 0.1667em;"></span><span class="mord">⋆</span><span
+                                            class="mclose">)</span></span></span></span></span> 为半群; 如果一个半群具有恒等元, 则称为幺半群;
+                        如果这个幺半群中每个元素都有逆, 那么称为群. 交换律成立的群称为 Abel 群或交换群. </p>
+                </div>在不至混淆的情况下, 可以将 <span class="inline-math"><span class="katex"><span class="katex-html"
+                            aria-hidden="true"><span class="base"><span class="strut"
+                                    style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span
+                                    class="mord mathnormal">G</span><span class="mpunct">,</span><span class="mspace"
+                                    style="margin-right: 0.1667em;"></span><span class="mord">⋆</span><span
+                                    class="mclose">)</span></span></span></span></span> 简记为 <span class="inline-math"><span
+                        class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                                    style="height: 0.6833em;"></span><span
+                                    class="mord mathnormal">G</span></span></span></span></span>. 另外, 对 <span
+                    class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                class="base"><span class="strut"
+                                    style="height: 0.5782em; vertical-align: -0.0391em;"></span><span
+                                    class="mord mathnormal">n</span><span class="mspace"
+                                    style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span class="mspace"
+                                    style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                                    style="height: 0.6861em;"></span><span
+                                    class="mord mathbb">Z</span></span></span></span></span> 记 <span
+                    class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                class="base"><span class="strut"
+                                    style="height: 0.8588em; vertical-align: -0.1944em;"></span><span class="mord"><span
+                                        style="margin-right: 0.0359em;" class="mord mathnormal">g</span><span
+                                        class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.6644em;"><span class=""
+                                                        style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                            style="height: 2.7em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span
+                                    class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                    class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span
+                                    class="strut" style="height: 2.0521em; vertical-align: -1.5868em;"></span><span
+                                    class="mord"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span
+                                                class="vlist-r"><span class="vlist" style="height: 0.4653em;"><span class=""
+                                                        style="top: -1.5132em; margin-left: 0em;"><span class="pstrut"
+                                                            style="height: 3em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span
+                                                                    class="mord mathnormal mtight">n</span><span
+                                                                    class="mord text mtight"><span
+                                                                        class="mord cjk_fallback mtight">个</span></span></span></span></span><span
+                                                        class="" style="top: -3em;"><span class="pstrut"
+                                                            style="height: 3em;"></span><span class=""><span
+                                                                class="mop"><span class="mord munder"><span
+                                                                        class="vlist-t vlist-t2"><span class="vlist-r"><span
+                                                                                class="vlist"
+                                                                                style="height: 0.4653em;"><span
+                                                                                    class="svg-align"
+                                                                                    style="top: -2.1576em;"><span
+                                                                                        class="pstrut"
+                                                                                        style="height: 3em;"></span><span
+                                                                                        class="stretchy"
+                                                                                        style="height: 0.548em; min-width: 1.6em;"><span
+                                                                                            class="brace-left"
+                                                                                            style="height: 0.548em;"><svg
+                                                                                                width="400em"
+                                                                                                height="0.548em"
+                                                                                                viewBox="0 0 400000 548"
+                                                                                                preserveAspectRatio="xMinYMin slice">
+                                                                                                <path
+                                                                                                    d="M0 6l6-6h17c12.688 0 19.313.3 20 1 4 4 7.313 8.3 10 13  35.313 51.3 80.813 93.8 136.5 127.5 55.688 33.7 117.188 55.8 184.5 66.5.688  0 2 .3 4 1 18.688 2.7 76 4.3 172 5h399450v120H429l-6-1c-124.688-8-235-61.7 -331-161C60.687 138.7 32.312 99.3 7 54L0 41V6z">
+                                                                                                </path>
+                                                                                            </svg></span><span
+                                                                                            class="brace-center"
+                                                                                            style="height: 0.548em;"><svg
+                                                                                                width="400em"
+                                                                                                height="0.548em"
+                                                                                                viewBox="0 0 400000 548"
+                                                                                                preserveAspectRatio="xMidYMin slice">
+                                                                                                <path
+                                                                                                    d="M199572 214 c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14  53.3-86.7 123.7-153 211-199 66.7-36 137.3-56.3 212-62h199568v120H200432c-178.3  11.7-311.7 78.3-403 201-6 8-9.7 12-11 12-.7.7-6.7 1-18 1s-17.3-.3-18-1c-1.3 0 -5-4-11-12-44.7-59.3-101.3-106.3-170-141s-145.3-54.3-229-60H0V214z">
+                                                                                                </path>
+                                                                                            </svg></span><span
+                                                                                            class="brace-right"
+                                                                                            style="height: 0.548em;"><svg
+                                                                                                width="400em"
+                                                                                                height="0.548em"
+                                                                                                viewBox="0 0 400000 548"
+                                                                                                preserveAspectRatio="xMaxYMin slice">
+                                                                                                <path
+                                                                                                    d="M399994 0l6 6v35l-6 11c-56 104-135.3 181.3-238 232-57.3  28.7-117 45-179 50H-300V214h399897c43.3-7 81-15 113-26 100.7-33 179.7-91 237 -174 2.7-5 6-9 10-13 .7-1 7.3-1 20-1h17z">
+                                                                                                </path>
+                                                                                            </svg></span></span></span><span
+                                                                                    class="" style="top: -3em;"><span
+                                                                                        class="pstrut"
+                                                                                        style="height: 3em;"></span><span
+                                                                                        class="mord"><span
+                                                                                            style="margin-right: 0.0359em;"
+                                                                                            class="mord mathnormal">g</span><span
+                                                                                            class="mspace"
+                                                                                            style="margin-right: 0.2222em;"></span><span
+                                                                                            class="mbin">⋆</span><span
+                                                                                            class="mspace"
+                                                                                            style="margin-right: 0.2222em;"></span><span
+                                                                                            style="margin-right: 0.0359em;"
+                                                                                            class="mord mathnormal">g</span><span
+                                                                                            class="mspace"
+                                                                                            style="margin-right: 0.2222em;"></span><span
+                                                                                            class="mbin">⋆</span><span
+                                                                                            class="mspace"
+                                                                                            style="margin-right: 0.2222em;"></span><span
+                                                                                            class="minner">⋯</span><span
+                                                                                            class="mspace"
+                                                                                            style="margin-right: 0.2222em;"></span><span
+                                                                                            class="mbin">⋆</span><span
+                                                                                            class="mspace"
+                                                                                            style="margin-right: 0.2222em;"></span><span
+                                                                                            style="margin-right: 0.0359em;"
+                                                                                            class="mord mathnormal">g</span></span></span></span><span
+                                                                                class="vlist-s">​</span></span><span
+                                                                            class="vlist-r"><span class="vlist"
+                                                                                style="height: 0.8424em;"><span
+                                                                                    class=""></span></span></span></span></span></span></span></span></span><span
+                                                    class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                                    style="height: 1.5868em;"><span
+                                                        class=""></span></span></span></span></span></span></span></span></span></span>,
+                <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                class="base"><span class="strut"
+                                    style="height: 0.9658em; vertical-align: -0.1944em;"></span><span class="mord"><span
+                                        style="margin-right: 0.0359em;" class="mord mathnormal">g</span><span
+                                        class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.7713em;"><span class=""
+                                                        style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                            style="height: 2.7em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span class="mord mtight">−</span><span
+                                                                    class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span><span
+                                    class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                    class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span
+                                    class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span
+                                    class="mopen">(</span><span class="mord"><span style="margin-right: 0.0359em;"
+                                        class="mord mathnormal">g</span><span class="msupsub"><span class="vlist-t"><span
+                                                class="vlist-r"><span class="vlist" style="height: 0.6644em;"><span class=""
+                                                        style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                            style="height: 2.7em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span
+                                    class="mclose"><span class="mclose">)</span><span class="msupsub"><span
+                                            class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.8141em;"><span class=""
+                                                        style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                            style="height: 2.7em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight"><span class="mord mtight">−</span><span
+                                                                    class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span></span>,
+                <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                class="base"><span class="strut"
+                                    style="height: 1.0085em; vertical-align: -0.1944em;"></span><span class="mord"><span
+                                        style="margin-right: 0.0359em;" class="mord mathnormal">g</span><span
+                                        class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.8141em;"><span class=""
+                                                        style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                            style="height: 2.7em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mtight">0</span></span></span></span></span></span></span></span><span
+                                    class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                    class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span
+                                    class="strut" style="height: 0.4306em;"></span><span
+                                    class="mord mathnormal">e</span></span></span></span></span>.
+            </div>
+            <p>下面的命题加深了对 <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                    class="mord mathnormal">G</span></span></span></span></span> 中恒等元和逆元的刻画. </p>
+            <div class="p">
+                <div class="block style-a">
+                    <p><span style="font-weight:bold" class="item-header">命题 <btex-ref
+                                data-key="--prefix--"></btex-ref>1.2.</span> 如果 <span class="inline-math"><span
+                                class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                            class="strut" style="height: 0.6833em;"></span><span
+                                            class="mord mathnormal">G</span></span></span></span></span> 为半群, 那么</p>
+                    <table class="list">
+                        <tr class="list-item">
+                            <td class="list-item-label">
+                                <p>1.</p>
+                            </td>
+                            <td class="list-item-content">
+                                <p><span class="inline-math"><span class="katex"><span class="katex-html"
+                                                aria-hidden="true"><span class="base"><span class="strut"
+                                                        style="height: 0.6833em;"></span><span
+                                                        class="mord mathnormal">G</span></span></span></span></span>
+                                    中至多有一个恒等元. </p>
+                            </td>
+                        </tr>
+                        <tr class="list-item">
+                            <td class="list-item-label">
+                                <p>2.</p>
+                            </td>
+                            <td class="list-item-content">
+                                <p>每个 <span class="inline-math"><span class="katex"><span class="katex-html"
+                                                aria-hidden="true"><span class="base"><span class="strut"
+                                                        style="height: 0.5782em; vertical-align: -0.0391em;"></span><span
+                                                        class="mord mathnormal">a</span><span class="mspace"
+                                                        style="margin-right: 0.2778em;"></span><span
+                                                        class="mrel">∈</span><span class="mspace"
+                                                        style="margin-right: 0.2778em;"></span></span><span
+                                                    class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                                        class="mord mathnormal">G</span></span></span></span></span>
+                                    至多有一个逆元. </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>证明略.
+            </div>
+            <div class="block style-c">
+                <p><span style="font-weight:bold" class="item-header">例 <btex-ref
+                            data-key="--prefix--"></btex-ref>1.3.</span> 设 <span class="inline-math"><span
+                            class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                                        style="height: 0.6833em;"></span><span style="margin-right: 0.2222em;"
+                                        class="mord mathnormal">V</span></span></span></span></span> 为域 <span
+                        class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                        style="margin-right: 0.1389em;"
+                                        class="mord mathnormal">F</span></span></span></span></span> 上的线性空间, 则 <span
+                        class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                        style="margin-right: 0.2222em;"
+                                        class="mord mathnormal">V</span></span></span></span></span> 上的线性算子全体 <span
+                        class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut"
+                                        style="height: 1em; vertical-align: -0.25em;"></span><span
+                                        class="mord mathnormal">L</span><span class="mopen">(</span><span
+                                        style="margin-right: 0.2222em;" class="mord mathnormal">V</span><span
+                                        class="mpunct">,</span><span class="mspace"
+                                        style="margin-right: 0.1667em;"></span><span style="margin-right: 0.2222em;"
+                                        class="mord mathnormal">V</span><span
+                                        class="mclose">)</span></span></span></span></span> 关于映射的复合构成幺半群, 其中所有可逆映射构成群, 但一般不是
+                    Abel 群. </p>
+            </div>
+            <div class="p">
+                <div class="block style-c">
+                    <p><span style="font-weight:bold" class="item-header">例 <btex-ref
+                                data-key="--prefix--"></btex-ref>1.4</span><span class="item-header"> (同余诱导的群)</span><span
+                            style="font-weight:bold" class="item-header">.</span> 对于 <span class="inline-math"><span
+                                class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                            class="strut" style="height: 0.5782em; vertical-align: -0.0391em;"></span><span
+                                            class="mord mathnormal">m</span><span class="mspace"
+                                            style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                            class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                        class="base"><span class="strut"
+                                            style="height: 0.8944em; vertical-align: -0.2083em;"></span><span
+                                            class="mord"><span class="mord mathbb">Z</span><span class="msupsub"><span
+                                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                            style="height: 0.2583em;"><span class=""
+                                                                style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span
+                                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                                    class="sizing reset-size6 size3 mtight"><span
+                                                                        class="mbin mtight">+</span></span></span></span><span
+                                                            class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                            class="vlist" style="height: 0.2083em;"><span
+                                                                class=""></span></span></span></span></span></span></span></span></span></span>,
+                        <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut"
+                                            style="height: 0.8333em; vertical-align: -0.15em;"></span><span
+                                            class="mord"><span style="margin-right: 0.0715em;"
+                                                class="mord mathnormal">Z</span><span class="msupsub"><span
+                                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                            style="height: 0.1514em;"><span class=""
+                                                                style="top: -2.55em; margin-left: -0.0715em; margin-right: 0.05em;"><span
+                                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                                    class="sizing reset-size6 size3 mtight"><span
+                                                                        class="mord mathnormal mtight">m</span></span></span></span><span
+                                                            class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                            class="vlist" style="height: 0.15em;"><span
+                                                                class=""></span></span></span></span></span></span><span
+                                            class="mspace" style="margin-right: 0.2778em;"></span><span
+                                            class="mrel">=</span><span class="mspace"
+                                            style="margin-right: 0.2778em;"></span></span><span class="base"><span
+                                            class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                                            class="mopen">{</span><span class="mord">0</span><span
+                                            class="mpunct">,</span><span class="mspace"
+                                            style="margin-right: 0.1667em;"></span><span class="mord">1</span><span
+                                            class="mpunct">,</span><span class="mspace"
+                                            style="margin-right: 0.1667em;"></span><span class="minner">…</span><span
+                                            class="mspace" style="margin-right: 0.1667em;"></span><span
+                                            class="mpunct">,</span><span class="mspace"
+                                            style="margin-right: 0.1667em;"></span><span
+                                            class="mord mathnormal">m</span><span class="mspace"
+                                            style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span
+                                            class="mspace" style="margin-right: 0.2222em;"></span></span><span
+                                        class="base"><span class="strut"
+                                            style="height: 1em; vertical-align: -0.25em;"></span><span
+                                            class="mord">1</span><span class="mclose">}</span></span></span></span></span>
+                        在模 <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut" style="height: 0.4306em;"></span><span
+                                            class="mord mathnormal">m</span></span></span></span></span> 的加法下构成群. <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut"
+                                            style="height: 0.964em; vertical-align: -0.2753em;"></span><span
+                                            class="mord"><span style="margin-right: 0.0715em;"
+                                                class="mord mathnormal">Z</span><span class="msupsub"><span
+                                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                            style="height: 0.6887em;"><span class=""
+                                                                style="top: -2.4247em; margin-left: -0.0715em; margin-right: 0.05em;"><span
+                                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                                    class="sizing reset-size6 size3 mtight"><span
+                                                                        style="margin-right: 0.109em;"
+                                                                        class="mord mathnormal mtight">M</span></span></span><span
+                                                                class="" style="top: -3.063em; margin-right: 0.05em;"><span
+                                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                                    class="sizing reset-size6 size3 mtight"><span
+                                                                        class="mbin mtight">∗</span></span></span></span><span
+                                                            class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                            class="vlist" style="height: 0.2753em;"><span
+                                                                class=""></span></span></span></span></span></span><span
+                                            class="mspace" style="margin-right: 0.2778em;"></span><span
+                                            class="mrel">=</span><span class="mspace"
+                                            style="margin-right: 0.2778em;"></span></span><span class="base"><span
+                                            class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                                            class="mopen">{</span><span class="mord mathnormal">x</span><span class="mspace"
+                                            style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                            class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                        class="base"><span class="strut"
+                                            style="height: 1em; vertical-align: -0.25em;"></span><span class="mord"><span
+                                                style="margin-right: 0.0715em;" class="mord mathnormal">Z</span><span
+                                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span
+                                                            class="vlist" style="height: 0.1514em;"><span class=""
+                                                                style="top: -2.55em; margin-left: -0.0715em; margin-right: 0.05em;"><span
+                                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                                    class="sizing reset-size6 size3 mtight"><span
+                                                                        class="mord mathnormal mtight">m</span></span></span></span><span
+                                                            class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                            class="vlist" style="height: 0.15em;"><span
+                                                                class=""></span></span></span></span></span></span><span
+                                            class="mspace" style="margin-right: 0.2778em;"></span><span
+                                            class="mrel">∣</span><span class="mspace"
+                                            style="margin-right: 0.2778em;"></span></span><span class="base"><span
+                                            class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                                            class="mop"><span style="margin-right: 0.0139em;">g</span>cd</span><span
+                                            class="mopen">(</span><span class="mord mathnormal">x</span><span
+                                            class="mpunct">,</span><span class="mspace"
+                                            style="margin-right: 0.1667em;"></span><span
+                                            class="mord mathnormal">m</span><span class="mclose">)</span><span
+                                            class="mspace" style="margin-right: 0.2778em;"></span><span
+                                            class="mrel">=</span><span class="mspace"
+                                            style="margin-right: 0.2778em;"></span></span><span class="base"><span
+                                            class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                                            class="mord">1</span><span class="mclose">}</span></span></span></span></span>
+                        在模 <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut" style="height: 0.4306em;"></span><span
+                                            class="mord mathnormal">m</span></span></span></span></span> 的乘法下构成群. </p>
+                </div>初等数论中定义了 <span class="inline-math"><span class="katex"><span class="katex-html"
+                            aria-hidden="true"><span class="base"><span class="strut"
+                                    style="height: 0.9357em; vertical-align: -0.247em;"></span><span class="mord"><span
+                                        style="margin-right: 0.0715em;" class="mord mathnormal">Z</span><span
+                                        class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span
+                                                    class="vlist" style="height: 0.6887em;"><span class=""
+                                                        style="top: -2.453em; margin-left: -0.0715em; margin-right: 0.05em;"><span
+                                                            class="pstrut" style="height: 2.7em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mathnormal mtight">m</span></span></span><span
+                                                        class="" style="top: -3.063em; margin-right: 0.05em;"><span
+                                                            class="pstrut" style="height: 2.7em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mbin mtight">∗</span></span></span></span><span
+                                                    class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.247em;"><span
+                                                        class=""></span></span></span></span></span></span></span></span></span></span>
+                中元素的阶, 现在可以在群中扩展这个定义.
+            </div>
+            <div class="p">
+                <div class="block style-b">
+                    <p><span style="font-weight:bold" class="item-header">定义 <btex-ref
+                                data-key="--prefix--"></btex-ref>1.5.</span> 对于 <span class="inline-math"><span
+                                class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                            class="strut" style="height: 0.7335em; vertical-align: -0.1944em;"></span><span
+                                            style="margin-right: 0.0359em;" class="mord mathnormal">g</span><span
+                                            class="mspace" style="margin-right: 0.2778em;"></span><span
+                                            class="mrel">∈</span><span class="mspace"
+                                            style="margin-right: 0.2778em;"></span></span><span class="base"><span
+                                            class="strut" style="height: 0.6833em;"></span><span
+                                            class="mord mathnormal">G</span></span></span></span></span>, 如果存在 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut"
+                                            style="height: 0.5782em; vertical-align: -0.0391em;"></span><span
+                                            class="mord mathnormal">n</span><span class="mspace"
+                                            style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                            class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                        class="base"><span class="strut"
+                                            style="height: 0.8917em; vertical-align: -0.2083em;"></span><span
+                                            class="mord"><span style="margin-right: 0.0715em;"
+                                                class="mord mathnormal">Z</span><span class="msupsub"><span
+                                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                            style="height: 0.2583em;"><span class=""
+                                                                style="top: -2.55em; margin-left: -0.0715em; margin-right: 0.05em;"><span
+                                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                                    class="sizing reset-size6 size3 mtight"><span
+                                                                        class="mbin mtight">+</span></span></span></span><span
+                                                            class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                            class="vlist" style="height: 0.2083em;"><span
+                                                                class=""></span></span></span></span></span></span></span></span></span></span>
+                        使得 <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut"
+                                            style="height: 0.8588em; vertical-align: -0.1944em;"></span><span
+                                            class="mord"><span style="margin-right: 0.0359em;"
+                                                class="mord mathnormal">g</span><span class="msupsub"><span
+                                                    class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                            style="height: 0.6644em;"><span class=""
+                                                                style="top: -3.063em; margin-right: 0.05em;"><span
+                                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                                    class="sizing reset-size6 size3 mtight"><span
+                                                                        class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span
+                                            class="mspace" style="margin-right: 0.2778em;"></span><span
+                                            class="mrel">=</span><span class="mspace"
+                                            style="margin-right: 0.2778em;"></span></span><span class="base"><span
+                                            class="strut" style="height: 0.4306em;"></span><span
+                                            class="mord mathnormal">e</span></span></span></span></span>, 则定义 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut"
+                                            style="height: 0.625em; vertical-align: -0.1944em;"></span><span
+                                            style="margin-right: 0.0359em;"
+                                            class="mord mathnormal">g</span></span></span></span></span> 的阶为<span
+                            class="display-math"><span class="katex-display"><span class="katex"><span class="katex-html"
+                                        aria-hidden="true"><span class="base"><span class="strut"
+                                                style="height: 1.4501em; vertical-align: -0.25em;"></span><span
+                                                class="mord mathnormal">o</span><span class="mopen">(</span><span
+                                                style="margin-right: 0.0359em;" class="mord mathnormal">g</span><span
+                                                class="mclose">)</span><span class="mspace"
+                                                style="margin-right: 0.2778em;"></span><span class="mrel"><span
+                                                    class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span
+                                                                class="vlist" style="height: 1.2001em;"><span class=""
+                                                                    style="top: -3em;"><span class="pstrut"
+                                                                        style="height: 3em;"></span><span class=""><span
+                                                                            class="mop">=</span></span></span><span class=""
+                                                                    style="top: -3.614em; margin-left: 0em;"><span
+                                                                        class="pstrut" style="height: 3em;"></span><span
+                                                                        class="sizing reset-size6 size3 mtight"><span
+                                                                            class="mord mtight"><span
+                                                                                class="mord mtight">△</span></span></span></span></span></span></span></span></span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                            class="base"><span class="strut"
+                                                style="height: 1em; vertical-align: -0.25em;"></span><span
+                                                class="mop">min</span><span class="mopen">{</span><span
+                                                class="mord mathnormal">n</span><span class="mspace"
+                                                style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                            class="base"><span class="strut"
+                                                style="height: 1em; vertical-align: -0.25em;"></span><span
+                                                class="mord"><span style="margin-right: 0.0715em;"
+                                                    class="mord mathnormal">Z</span><span class="msupsub"><span
+                                                        class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                                style="height: 0.2583em;"><span class=""
+                                                                    style="top: -2.55em; margin-left: -0.0715em; margin-right: 0.05em;"><span
+                                                                        class="pstrut" style="height: 2.7em;"></span><span
+                                                                        class="sizing reset-size6 size3 mtight"><span
+                                                                            class="mbin mtight">+</span></span></span></span><span
+                                                                class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                                class="vlist" style="height: 0.2083em;"><span
+                                                                    class=""></span></span></span></span></span></span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span><span
+                                                class="mrel">∣</span><span class="mspace"
+                                                style="margin-right: 0.2778em;"></span></span><span class="base"><span
+                                                class="strut"
+                                                style="height: 0.9088em; vertical-align: -0.1944em;"></span><span
+                                                class="mord"><span style="margin-right: 0.0359em;"
+                                                    class="mord mathnormal">g</span><span class="msupsub"><span
+                                                        class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                                style="height: 0.7144em;"><span class=""
+                                                                    style="top: -3.113em; margin-right: 0.05em;"><span
+                                                                        class="pstrut" style="height: 2.7em;"></span><span
+                                                                        class="sizing reset-size6 size3 mtight"><span
+                                                                            class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span><span
+                                                class="mrel">=</span><span class="mspace"
+                                                style="margin-right: 0.2778em;"></span></span><span class="base"><span
+                                                class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                                                class="mord mathnormal">e</span><span class="mclose">}</span><span
+                                                class="mord cjk_fallback">。</span></span></span></span></span></span>否则定义
+                        <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut"
+                                            style="height: 1em; vertical-align: -0.25em;"></span><span
+                                            class="mord mathnormal">o</span><span class="mopen">(</span><span
+                                            style="margin-right: 0.0359em;" class="mord mathnormal">g</span><span
+                                            class="mclose">)</span><span class="mspace"
+                                            style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                            class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                        class="base"><span class="strut" style="height: 0.4306em;"></span><span
+                                            class="mord">∞</span></span></span></span></span>. </p>
+                </div>一个有用的结论是, 如果 <span class="inline-math"><span class="katex"><span class="katex-html"
+                            aria-hidden="true"><span class="base"><span class="strut"
+                                    style="height: 0.8588em; vertical-align: -0.1944em;"></span><span class="mord"><span
+                                        style="margin-right: 0.0359em;" class="mord mathnormal">g</span><span
+                                        class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                    style="height: 0.6644em;"><span class=""
+                                                        style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                                                            style="height: 2.7em;"></span><span
+                                                            class="sizing reset-size6 size3 mtight"><span
+                                                                class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span
+                                    class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                    class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span
+                                    class="strut" style="height: 0.4306em;"></span><span
+                                    class="mord mathnormal">e</span></span></span></span></span>, 那么 <span
+                    class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                                    class="mord mathnormal">o</span><span class="mopen">(</span><span
+                                    style="margin-right: 0.0359em;" class="mord mathnormal">g</span><span
+                                    class="mclose">)</span><span class="mspace" style="margin-right: 0.2778em;"></span><span
+                                    class="mrel">∣</span><span class="mspace"
+                                    style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                                    style="height: 0.4306em;"></span><span
+                                    class="mord mathnormal">n</span></span></span></span></span>.
+            </div>
+            <p>注意, 群 <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                    class="mord mathnormal">G</span></span></span></span></span> 的阶指的是集合 <span
+                    class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                    class="mord mathnormal">G</span></span></span></span></span> 的大小 <span
+                    class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                                    class="mord">∣</span><span class="mord mathnormal">G</span><span
+                                    class="mord">∣</span></span></span></span></span>, 与其中元素的阶不同.</p>
+            <p>
+            <h2 id="子群"><span class="header-number"><btex-ref data-key="--prefix--"></btex-ref>2</span>子群</h2>
+            </p>
+            <p>子群是群的子结构. </p>
+            <div class="p">
+                <div class="block style-b">
+                    <p><span style="font-weight:bold" class="item-header">定义 <btex-ref
+                                data-key="--prefix--"></btex-ref>2.1.</span> 设 <span class="inline-math"><span
+                                class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                            class="strut" style="height: 0.6833em;"></span><span
+                                            class="mord mathnormal">G</span></span></span></span></span> 是群, <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                            style="margin-right: 0.0813em;"
+                                            class="mord mathnormal">H</span></span></span></span></span> 为 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                            class="mord mathnormal">G</span></span></span></span></span> 的子集. 如果 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut"
+                                            style="height: 0.5782em; vertical-align: -0.0391em;"></span><span
+                                            class="mord mathnormal">e</span><span class="mspace"
+                                            style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                            class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                        class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                            style="margin-right: 0.0813em;"
+                                            class="mord mathnormal">H</span></span></span></span></span>, 且对任意 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut"
+                                            style="height: 0.8889em; vertical-align: -0.1944em;"></span><span
+                                            class="mord mathnormal">a</span><span class="mpunct">,</span><span
+                                            class="mspace" style="margin-right: 0.1667em;"></span><span
+                                            class="mord mathnormal">b</span><span class="mspace"
+                                            style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                            class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                        class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                            style="margin-right: 0.0813em;"
+                                            class="mord mathnormal">H</span></span></span></span></span>, 有 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut"
+                                            style="height: 1.0085em; vertical-align: -0.1944em;"></span><span
+                                            class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span
+                                                    class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                            style="height: 0.8141em;"><span class=""
+                                                                style="top: -3.063em; margin-right: 0.05em;"><span
+                                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                                    class="sizing reset-size6 size3 mtight"><span
+                                                                        class="mord mtight"><span
+                                                                            class="mord mtight">−</span><span
+                                                                            class="mord mtight">1</span></span></span></span></span></span></span></span></span><span
+                                            class="mpunct">,</span><span class="mspace"
+                                            style="margin-right: 0.1667em;"></span><span
+                                            class="mord mathnormal">ab</span><span class="mspace"
+                                            style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                            class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                        class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                            style="margin-right: 0.0813em;"
+                                            class="mord mathnormal">H</span></span></span></span></span>, 那么称 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                            style="margin-right: 0.0813em;"
+                                            class="mord mathnormal">H</span></span></span></span></span> 为 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                            class="mord mathnormal">G</span></span></span></span></span> 的子群, 记为 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut"
+                                            style="height: 0.7224em; vertical-align: -0.0391em;"></span><span
+                                            style="margin-right: 0.0813em;" class="mord mathnormal">H</span><span
+                                            class="mspace" style="margin-right: 0.2778em;"></span><span
+                                            class="mrel">&lt;</span><span class="mspace"
+                                            style="margin-right: 0.2778em;"></span></span><span class="base"><span
+                                            class="strut" style="height: 0.6833em;"></span><span
+                                            class="mord mathnormal">G</span></span></span></span></span>. </p>
+                </div>下面的命题给出了子群的一种等价定义.
+            </div>
+            <div class="p">
+                <div class="block style-a">
+                    <p><span style="font-weight:bold" class="item-header">命题 <btex-ref
+                                data-key="--prefix--"></btex-ref>2.2.</span> <span class="inline-math"><span
+                                class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                            class="strut" style="height: 0.6833em;"></span><span
+                                            style="margin-right: 0.0813em;"
+                                            class="mord mathnormal">H</span></span></span></span></span> 是 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                            class="mord mathnormal">G</span></span></span></span></span> 的子群当且仅当对任意 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut"
+                                            style="height: 0.8889em; vertical-align: -0.1944em;"></span><span
+                                            class="mord mathnormal">a</span><span class="mpunct">,</span><span
+                                            class="mspace" style="margin-right: 0.1667em;"></span><span
+                                            class="mord mathnormal">b</span><span class="mspace"
+                                            style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                            class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                        class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                            style="margin-right: 0.0813em;"
+                                            class="mord mathnormal">H</span></span></span></span></span>, 有 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut"
+                                            style="height: 0.8532em; vertical-align: -0.0391em;"></span><span
+                                            class="mord mathnormal">a</span><span class="mord"><span
+                                                class="mord mathnormal">b</span><span class="msupsub"><span
+                                                    class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                            style="height: 0.8141em;"><span class=""
+                                                                style="top: -3.063em; margin-right: 0.05em;"><span
+                                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                                    class="sizing reset-size6 size3 mtight"><span
+                                                                        class="mord mtight"><span
+                                                                            class="mord mtight">−</span><span
+                                                                            class="mord mtight">1</span></span></span></span></span></span></span></span></span><span
+                                            class="mspace" style="margin-right: 0.2778em;"></span><span
+                                            class="mrel">∈</span><span class="mspace"
+                                            style="margin-right: 0.2778em;"></span></span><span class="base"><span
+                                            class="strut" style="height: 0.6833em;"></span><span
+                                            style="margin-right: 0.0813em;"
+                                            class="mord mathnormal">H</span></span></span></span></span>. </p>
+                </div>与线性子空间类似, 子群的任意交仍是子群.
+            </div>
+            <div class="p">
+                <div class="block style-a">
+                    <p><span style="font-weight:bold" class="item-header">命题 <btex-ref
+                                data-key="--prefix--"></btex-ref>2.3.</span> 设 <span class="inline-math"><span
+                                class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                            class="strut" style="height: 0.6833em;"></span><span
+                                            class="mord mathnormal">G</span></span></span></span></span> 为群, <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut"
+                                            style="height: 1em; vertical-align: -0.25em;"></span><span
+                                            class="mopen">{</span><span class="mord"><span style="margin-right: 0.0813em;"
+                                                class="mord mathnormal">H</span><span class="msupsub"><span
+                                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                            style="height: 0.1514em;"><span class=""
+                                                                style="top: -2.55em; margin-left: -0.0813em; margin-right: 0.05em;"><span
+                                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                                    class="sizing reset-size6 size3 mtight"><span
+                                                                        style="margin-right: 0.0037em;"
+                                                                        class="mord mathnormal mtight">α</span></span></span></span><span
+                                                            class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                            class="vlist" style="height: 0.15em;"><span
+                                                                class=""></span></span></span></span></span></span><span
+                                            class="mclose"><span class="mclose">}</span><span class="msupsub"><span
+                                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                            style="height: 0.3283em;"><span class=""
+                                                                style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span
+                                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                                    class="sizing reset-size6 size3 mtight"><span
+                                                                        class="mord mtight"><span
+                                                                            style="margin-right: 0.0037em;"
+                                                                            class="mord mathnormal mtight">α</span><span
+                                                                            class="mrel mtight">∈</span><span
+                                                                            class="mord mtight">Λ</span></span></span></span></span><span
+                                                            class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                            class="vlist" style="height: 0.1774em;"><span
+                                                                class=""></span></span></span></span></span></span></span></span></span></span>
+                        由 <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                            class="mord mathnormal">G</span></span></span></span></span> 的子集构成, 其中 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                            class="mord">Λ</span></span></span></span></span> 为非空指标集, 那么 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut"
+                                            style="height: 1.0771em; vertical-align: -0.3271em;"></span><span
+                                            class="mop"><span class="mop op-symbol small-op"
+                                                style="position: relative; top: 0em;">⋂</span><span class="msupsub"><span
+                                                    class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                            style="height: 0.1786em;"><span class=""
+                                                                style="top: -2.4003em; margin-left: 0em; margin-right: 0.05em;"><span
+                                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                                    class="sizing reset-size6 size3 mtight"><span
+                                                                        class="mord mtight"><span
+                                                                            style="margin-right: 0.0037em;"
+                                                                            class="mord mathnormal mtight">α</span><span
+                                                                            class="mrel mtight">∈</span><span
+                                                                            class="mord mtight">Λ</span></span></span></span></span><span
+                                                            class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                            class="vlist" style="height: 0.3271em;"><span
+                                                                class=""></span></span></span></span></span></span><span
+                                            class="mspace" style="margin-right: 0.1667em;"></span><span class="mord"><span
+                                                style="margin-right: 0.0813em;" class="mord mathnormal">H</span><span
+                                                class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span
+                                                            class="vlist" style="height: 0.1514em;"><span class=""
+                                                                style="top: -2.55em; margin-left: -0.0813em; margin-right: 0.05em;"><span
+                                                                    class="pstrut" style="height: 2.7em;"></span><span
+                                                                    class="sizing reset-size6 size3 mtight"><span
+                                                                        style="margin-right: 0.0037em;"
+                                                                        class="mord mathnormal mtight">α</span></span></span></span><span
+                                                            class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                            class="vlist" style="height: 0.15em;"><span
+                                                                class=""></span></span></span></span></span></span></span></span></span></span>
+                        是 <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                            class="mord mathnormal">G</span></span></span></span></span> 的子群. </p>
+                </div>注意 <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                    class="mord">Λ</span></span></span></span></span> 不必为有限集, 而可以是任意集合.
+            </div>
+            <p>这个命题保证了下面的定义是合理的. </p>
+            <div class="p">
+                <div class="block style-b">
+                    <p><span style="font-weight:bold" class="item-header">定义 <btex-ref
+                                data-key="--prefix--"></btex-ref>2.4.</span> 设 <span class="inline-math"><span
+                                class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span
+                                            class="strut" style="height: 0.6833em;"></span><span
+                                            class="mord mathnormal">G</span></span></span></span></span> 是群, <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                            style="margin-right: 0.0576em;"
+                                            class="mord mathnormal">S</span></span></span></span></span> 是 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                            class="mord mathnormal">G</span></span></span></span></span> 的子集, 则<span
+                            class="display-math"><span class="katex-display"><span class="katex"><span class="katex-html"
+                                        aria-hidden="true"><span class="base"><span class="strut"
+                                                style="height: 1.4501em; vertical-align: -0.25em;"></span><span
+                                                class="mopen">⟨</span><span style="margin-right: 0.0576em;"
+                                                class="mord mathnormal">S</span><span class="mclose">⟩</span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span><span
+                                                class="mrel"><span class="mop op-limits"><span class="vlist-t"><span
+                                                            class="vlist-r"><span class="vlist"
+                                                                style="height: 1.2001em;"><span class=""
+                                                                    style="top: -3em;"><span class="pstrut"
+                                                                        style="height: 3em;"></span><span class=""><span
+                                                                            class="mop">=</span></span></span><span class=""
+                                                                    style="top: -3.614em; margin-left: 0em;"><span
+                                                                        class="pstrut" style="height: 3em;"></span><span
+                                                                        class="sizing reset-size6 size3 mtight"><span
+                                                                            class="mord mtight"><span
+                                                                                class="mord mtight">△</span></span></span></span></span></span></span></span></span><span
+                                                class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                            class="base"><span class="strut"
+                                                style="height: 3.0747em; vertical-align: -2.0247em;"></span><span
+                                                class="mop op-limits"><span class="vlist-t vlist-t2"><span
+                                                        class="vlist-r"><span class="vlist" style="height: 1.05em;"><span
+                                                                class="" style="top: -1.5547em; margin-left: 0em;"><span
+                                                                    class="pstrut" style="height: 3.05em;"></span><span
+                                                                    class="sizing reset-size6 size3 mtight"><span
+                                                                        class="mord mtight"><span class="mord mtight"><span
+                                                                                class="mtable"><span
+                                                                                    class="col-align-c"><span
+                                                                                        class="vlist-t vlist-t2"><span
+                                                                                            class="vlist-r"><span
+                                                                                                class="vlist"
+                                                                                                style="height: 1.1133em;"><span
+                                                                                                    class=""
+                                                                                                    style="top: -3.13em;"><span
+                                                                                                        class="pstrut"
+                                                                                                        style="height: 2.7em;"></span><span
+                                                                                                        class="mord mtight"><span
+                                                                                                            style="margin-right: 0.0813em;"
+                                                                                                            class="mord mathnormal mtight">H</span><span
+                                                                                                            class="mrel mtight">⊃</span><span
+                                                                                                            style="margin-right: 0.0576em;"
+                                                                                                            class="mord mathnormal mtight">S</span></span></span><span
+                                                                                                    class=""
+                                                                                                    style="top: -2.2667em;"><span
+                                                                                                        class="pstrut"
+                                                                                                        style="height: 2.7em;"></span><span
+                                                                                                        class="mord mtight"><span
+                                                                                                            style="margin-right: 0.0813em;"
+                                                                                                            class="mord mathnormal mtight">H</span><span
+                                                                                                            class="mrel mtight">&lt;</span><span
+                                                                                                            class="mord mathnormal mtight">G</span></span></span></span><span
+                                                                                                class="vlist-s">​</span></span><span
+                                                                                            class="vlist-r"><span
+                                                                                                class="vlist"
+                                                                                                style="height: 0.6133em;"><span
+                                                                                                    class=""></span></span></span></span></span></span></span></span></span></span><span
+                                                                class="" style="top: -3.05em;"><span class="pstrut"
+                                                                    style="height: 3.05em;"></span><span class=""><span
+                                                                        class="mop op-symbol large-op">⋂</span></span></span></span><span
+                                                            class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                            class="vlist" style="height: 2.0247em;"><span
+                                                                class=""></span></span></span></span></span><span
+                                                class="mspace" style="margin-right: 0.1667em;"></span><span
+                                                style="margin-right: 0.0813em;" class="mord mathnormal">H</span><span
+                                                class="mord">.</span></span></span></span></span></span>称为由 <span
+                            class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                        class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                            style="margin-right: 0.0576em;"
+                                            class="mord mathnormal">S</span></span></span></span></span> 生成的子群. </p>
+                </div>对于群 <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                    class="mord mathnormal">G</span></span></span></span></span>, 如果存在 <span
+                    class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                class="base"><span class="strut"
+                                    style="height: 0.7335em; vertical-align: -0.1944em;"></span><span
+                                    style="margin-right: 0.0359em;" class="mord mathnormal">g</span><span class="mspace"
+                                    style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span class="mspace"
+                                    style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                                    style="height: 0.6833em;"></span><span
+                                    class="mord mathnormal">G</span></span></span></span></span> 使得 <span
+                    class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                    class="mord mathnormal">G</span><span class="mspace"
+                                    style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace"
+                                    style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                                    style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">⟨</span><span
+                                    style="margin-right: 0.0359em;" class="mord mathnormal">g</span><span
+                                    class="mclose">⟩</span></span></span></span></span>, 则称 <span class="inline-math"><span
+                        class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                                    style="height: 0.6833em;"></span><span
+                                    class="mord mathnormal">G</span></span></span></span></span> 为循环群.
+            </div>
+            <p>
+            <h2 id="习题"><span class="header-number"><btex-ref data-key="--prefix--"></btex-ref>3</span>习题</h2>
+            </p>
+            <div class="block style-c">
+                <p><span style="font-weight:bold" class="item-header">题 <btex-ref
+                            data-key="--prefix--"></btex-ref>3.1.</span> 证明 <span class="inline-math"><span
+                            class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                                        style="height: 1em; vertical-align: -0.25em;"></span><span
+                                        class="mopen">(</span><span class="mord mathbb">Z</span><span
+                                        class="mpunct">,</span><span class="mspace"
+                                        style="margin-right: 0.1667em;"></span><span class="mord">+</span><span
+                                        class="mclose">)</span></span></span></span></span> 的所有子群形如 <span
+                        class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut" style="height: 0.6861em;"></span><span
+                                        class="mord mathnormal">m</span><span class="mord mathbb">Z</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span><span
+                                        class="mrel">=</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                                        style="height: 1em; vertical-align: -0.25em;"></span><span
+                                        class="mopen">{</span><span class="mord mathnormal">m</span><span
+                                        class="mord mathnormal">t</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">∣</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut"
+                                        style="height: 0.6542em; vertical-align: -0.0391em;"></span><span
+                                        class="mord mathnormal">t</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut"
+                                        style="height: 1em; vertical-align: -0.25em;"></span><span
+                                        class="mord mathbb">Z</span><span
+                                        class="mclose">}</span></span></span></span></span>, 这里 <span
+                        class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut"
+                                        style="height: 0.5782em; vertical-align: -0.0391em;"></span><span
+                                        class="mord mathnormal">m</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut"
+                                        style="height: 0.9313em; vertical-align: -0.2452em;"></span><span class="mord"><span
+                                            class="mord mathbb">Z</span><span class="msupsub"><span
+                                                class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                        style="height: 0.3011em;"><span class=""
+                                                            style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span
+                                                                class="pstrut" style="height: 2.7em;"></span><span
+                                                                class="sizing reset-size6 size3 mtight"><span
+                                                                    class="mord mtight"><span
+                                                                        class="mrel mtight">≥</span><span
+                                                                        class="mord mtight">0</span></span></span></span></span><span
+                                                        class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                        class="vlist" style="height: 0.2452em;"><span
+                                                            class=""></span></span></span></span></span></span></span></span></span></span>.
+                </p>
+            </div>
+            <div class="proof">
+                <p><b>证明.</b> 设 <span class="inline-math"><span class="katex"><span class="katex-html"
+                                aria-hidden="true"><span class="base"><span class="strut"
+                                        style="height: 0.6833em;"></span><span style="margin-right: 0.0813em;"
+                                        class="mord mathnormal">H</span></span></span></span></span> 为 <span
+                        class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut"
+                                        style="height: 0.8805em; vertical-align: -0.1944em;"></span><span
+                                        class="mord mathbb">Z</span><span class="mpunct">,</span><span class="mspace"
+                                        style="margin-right: 0.1667em;"></span><span
+                                        class="mord">+</span></span></span></span></span> 的子群. 取 <span
+                        class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut" style="height: 0.4306em;"></span><span
+                                        class="mord mathnormal">m</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut"
+                                        style="height: 1em; vertical-align: -0.25em;"></span><span
+                                        class="mop">min</span><span class="mopen">{</span><span
+                                        class="mord mathnormal">x</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut"
+                                        style="height: 1em; vertical-align: -0.25em;"></span><span
+                                        style="margin-right: 0.0813em;" class="mord mathnormal">H</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">∣</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut"
+                                        style="height: 0.5782em; vertical-align: -0.0391em;"></span><span
+                                        class="mord mathnormal">x</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">&gt;</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut"
+                                        style="height: 1em; vertical-align: -0.25em;"></span><span
+                                        class="mord">0</span><span class="mclose">}</span></span></span></span></span>.
+                    我们断言: <span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                        style="margin-right: 0.0813em;" class="mord mathnormal">H</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut" style="height: 0.6861em;"></span><span
+                                        class="mord mathnormal">m</span><span
+                                        class="mord mathbb">Z</span></span></span></span></span>.</p>
+                <div class="p">若不然, 显然 <span class="inline-math"><span class="katex"><span class="katex-html"
+                                aria-hidden="true"><span class="base"><span class="strut"
+                                        style="height: 0.7252em; vertical-align: -0.0391em;"></span><span
+                                        class="mord mathnormal">m</span><span class="mord mathbb">Z</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span><span
+                                        class="mrel">⊂</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                                        style="height: 0.6833em;"></span><span style="margin-right: 0.0813em;"
+                                        class="mord mathnormal">H</span></span></span></span></span>, 取 <span
+                        class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut"
+                                        style="height: 0.625em; vertical-align: -0.1944em;"></span><span
+                                        class="mord mathnormal">p</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut"
+                                        style="height: 1em; vertical-align: -0.25em;"></span><span
+                                        style="margin-right: 0.0813em;" class="mord mathnormal">H</span><span class="mspace"
+                                        style="margin-right: 0.2222em;"></span><span class="mbin">∖</span><span
+                                        class="mspace" style="margin-right: 0.2222em;"></span></span><span
+                                    class="base"><span class="strut" style="height: 0.6861em;"></span><span
+                                        class="mord mathnormal">m</span><span
+                                        class="mord mathbb">Z</span></span></span></span></span>, 则有带余除法 <span
+                        class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut"
+                                        style="height: 0.625em; vertical-align: -0.1944em;"></span><span
+                                        class="mord mathnormal">p</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut"
+                                        style="height: 0.7778em; vertical-align: -0.1944em;"></span><span
+                                        class="mord mathnormal">m</span><span style="margin-right: 0.0359em;"
+                                        class="mord mathnormal">q</span><span class="mspace"
+                                        style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span
+                                        class="mspace" style="margin-right: 0.2222em;"></span></span><span
+                                    class="base"><span class="strut"
+                                        style="height: 0.7335em; vertical-align: -0.1944em;"></span><span
+                                        style="margin-right: 0.0278em;" class="mord mathnormal">r</span><span
+                                        class="mpunct">,</span><span class="mspace"
+                                        style="margin-right: 0.1667em;"></span><span style="margin-right: 0.0359em;"
+                                        class="mord mathnormal">q</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut"
+                                        style="height: 0.8805em; vertical-align: -0.1944em;"></span><span
+                                        class="mord mathbb">Z</span><span class="mpunct">,</span><span class="mspace"
+                                        style="margin-right: 0.1667em;"></span><span class="mord">0</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span><span
+                                        class="mrel">&lt;</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                                        style="height: 0.5782em; vertical-align: -0.0391em;"></span><span
+                                        style="margin-right: 0.0278em;" class="mord mathnormal">r</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">&lt;</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut" style="height: 0.4306em;"></span><span
+                                        class="mord mathnormal">m</span></span></span></span></span>. 由 <span
+                        class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                        style="margin-right: 0.0813em;"
+                                        class="mord mathnormal">H</span></span></span></span></span> 为子群得 <span
+                        class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut" style="height: 0.4306em;"></span><span
+                                        style="margin-right: 0.0278em;" class="mord mathnormal">r</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut"
+                                        style="height: 0.7778em; vertical-align: -0.1944em;"></span><span
+                                        class="mord mathnormal">p</span><span class="mspace"
+                                        style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span
+                                        class="mspace" style="margin-right: 0.2222em;"></span></span><span
+                                    class="base"><span class="strut"
+                                        style="height: 0.7335em; vertical-align: -0.1944em;"></span><span
+                                        class="mord mathnormal">m</span><span style="margin-right: 0.0359em;"
+                                        class="mord mathnormal">q</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut" style="height: 0.6833em;"></span><span
+                                        style="margin-right: 0.0813em;"
+                                        class="mord mathnormal">H</span></span></span></span></span>. 可是 <span
+                        class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut"
+                                        style="height: 0.6835em; vertical-align: -0.0391em;"></span><span
+                                        class="mord">0</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">&lt;</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut"
+                                        style="height: 0.5782em; vertical-align: -0.0391em;"></span><span
+                                        style="margin-right: 0.0278em;" class="mord mathnormal">r</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">&lt;</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut" style="height: 0.4306em;"></span><span
+                                        class="mord mathnormal">m</span></span></span></span></span> 与 <span
+                        class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut" style="height: 0.4306em;"></span><span
+                                        class="mord mathnormal">m</span></span></span></span></span> 的取法矛盾. 因此断言成立. <div
+                        class="floatright">
+                        <p><span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                            class="base"><span class="strut" style="height: 0.675em;"></span><span
+                                                class="mord amsrm">□</span></span></span></span></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="block style-c">
+                <p><span style="font-weight:bold" class="item-header">题 <btex-ref
+                            data-key="--prefix--"></btex-ref>3.2.</span> 在 <span class="inline-math"><span
+                            class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                                        style="height: 0.8635em; vertical-align: -0.1774em;"></span><span class="mord"><span
+                                            class="mord mathbb">R</span><span class="msupsub"><span
+                                                class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                        style="height: 0.3011em;"><span class=""
+                                                            style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span
+                                                                class="pstrut" style="height: 2.7em;"></span><span
+                                                                class="sizing reset-size6 size3 mtight"><span
+                                                                    class="mord mtight"><span
+                                                                        class="mrel mtight">&gt;</span><span
+                                                                        class="mord mtight">0</span></span></span></span></span><span
+                                                        class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                        class="vlist" style="height: 0.1774em;"><span
+                                                            class=""></span></span></span></span></span></span></span></span></span></span>
+                    内构造出两个不同的乘法子群. </p>
+            </div>
+            <div class="proof">
+                <div class="p"><b>证明.</b> 取 <span class="inline-math"><span class="katex"><span class="katex-html"
+                                aria-hidden="true"><span class="base"><span class="strut"
+                                        style="height: 0.6833em;"></span><span class="mord mathnormal">G</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span><span
+                                        class="mrel">=</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                                        style="height: 1em; vertical-align: -0.25em;"></span><span
+                                        class="mopen">{</span><span class="mord"><span class="mord">2</span><span
+                                            class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                        style="height: 0.6644em;"><span class=""
+                                                            style="top: -3.063em; margin-right: 0.05em;"><span
+                                                                class="pstrut" style="height: 2.7em;"></span><span
+                                                                class="sizing reset-size6 size3 mtight"><span
+                                                                    class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span><span
+                                        class="mrel">∣</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                                        style="height: 0.5782em; vertical-align: -0.0391em;"></span><span
+                                        class="mord mathnormal">n</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">∈</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut"
+                                        style="height: 1em; vertical-align: -0.25em;"></span><span
+                                        class="mord mathbb">Z</span><span class="mclose">}</span><span
+                                        class="mpunct">,</span><span class="mspace"
+                                        style="margin-right: 0.1667em;"></span><span style="margin-right: 0.0813em;"
+                                        class="mord mathnormal">H</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut"
+                                        style="height: 1em; vertical-align: -0.25em;"></span><span
+                                        class="mopen">{</span><span class="mord"><span class="mord">3</span><span
+                                            class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                        style="height: 0.6644em;"><span class=""
+                                                            style="top: -3.063em; margin-right: 0.05em;"><span
+                                                                class="pstrut" style="height: 2.7em;"></span><span
+                                                                class="sizing reset-size6 size3 mtight"><span
+                                                                    class="mord mathnormal mtight">m</span></span></span></span></span></span></span></span><span
+                                        class="mord"><span class="mord">5</span><span class="msupsub"><span
+                                                class="vlist-t"><span class="vlist-r"><span class="vlist"
+                                                        style="height: 0.6644em;"><span class=""
+                                                            style="top: -3.063em; margin-right: 0.05em;"><span
+                                                                class="pstrut" style="height: 2.7em;"></span><span
+                                                                class="sizing reset-size6 size3 mtight"><span
+                                                                    class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span><span
+                                        class="mrel">∣</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                                        style="height: 0.7335em; vertical-align: -0.1944em;"></span><span
+                                        class="mord mathnormal">m</span><span class="mpunct">,</span><span class="mspace"
+                                        style="margin-right: 0.1667em;"></span><span class="mord mathnormal">n</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span><span
+                                        class="mrel">∈</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut"
+                                        style="height: 1em; vertical-align: -0.25em;"></span><span
+                                        class="mord mathbb">Z</span><span
+                                        class="mclose">}</span></span></span></span></span>, 则 <span
+                        class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut"
+                                        style="height: 1em; vertical-align: -0.25em;"></span><span
+                                        class="mopen">(</span><span class="mord mathnormal">G</span><span
+                                        class="mpunct">,</span><span class="mspace"
+                                        style="margin-right: 0.1667em;"></span><span class="mord">⋅</span><span
+                                        class="mclose">)</span><span class="mpunct">,</span><span class="mspace"
+                                        style="margin-right: 0.1667em;"></span><span class="mopen">(</span><span
+                                        style="margin-right: 0.0813em;" class="mord mathnormal">H</span><span
+                                        class="mpunct">,</span><span class="mspace"
+                                        style="margin-right: 0.1667em;"></span><span class="mord">⋅</span><span
+                                        class="mclose">)</span></span></span></span></span> 均为 <span
+                        class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut"
+                                        style="height: 0.8635em; vertical-align: -0.1774em;"></span><span class="mord"><span
+                                            class="mord mathbb">R</span><span class="msupsub"><span
+                                                class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                                                        style="height: 0.3011em;"><span class=""
+                                                            style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span
+                                                                class="pstrut" style="height: 2.7em;"></span><span
+                                                                class="sizing reset-size6 size3 mtight"><span
+                                                                    class="mord mtight"><span
+                                                                        class="mrel mtight">&gt;</span><span
+                                                                        class="mord mtight">0</span></span></span></span></span><span
+                                                        class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                        class="vlist" style="height: 0.1774em;"><span
+                                                            class=""></span></span></span></span></span></span></span></span></span></span>
+                    的乘法子群. <div class="floatright">
+                        <p><span class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                            class="base"><span class="strut" style="height: 0.675em;"></span><span
+                                                class="mord amsrm">□</span></span></span></span></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="block style-c">
+                <p><span style="font-weight:bold" class="item-header">题 <btex-ref
+                            data-key="--prefix--"></btex-ref>3.3.</span> 设 <span class="inline-math"><span
+                            class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                                        style="height: 0.6833em;"></span><span style="margin-right: 0.0715em;"
+                                        class="mord mathnormal">K</span></span></span></span></span> 是一个数域, <span
+                        class="inline-math"><span class="katex"><span class="katex-html" aria-hidden="true"><span
+                                    class="base"><span class="strut"
+                                        style="height: 0.5782em; vertical-align: -0.0391em;"></span><span
+                                        class="mord mathnormal">n</span><span class="mspace"
+                                        style="margin-right: 0.2778em;"></span><span class="mrel">&gt;</span><span
+                                        class="mspace" style="margin-right: 0.2778em;"></span></span><span
+                                    class="base"><span class="strut" style="height: 0.6444em;"></span><span
+                                        class="mord">1</span></span></span></span></span>, 在 <span class="inline-math"><span
+                            class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                                        style="height: 1em; vertical-align: -0.25em;"></span><span class="mord"><span
+                                            class="mord"><span class="mord mathrm">GL</span></span><span
+                                            class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span
+                                                        class="vlist" style="height: 0.1514em;"><span class=""
+                                                            style="top: -2.55em; margin-right: 0.05em;"><span class="pstrut"
+                                                                style="height: 2.7em;"></span><span
+                                                                class="sizing reset-size6 size3 mtight"><span
+                                                                    class="mord mathnormal mtight">n</span></span></span></span><span
+                                                        class="vlist-s">​</span></span><span class="vlist-r"><span
+                                                        class="vlist" style="height: 0.15em;"><span
+                                                            class=""></span></span></span></span></span></span><span
+                                        class="mopen">(</span><span style="margin-right: 0.0715em;"
+                                        class="mord mathnormal">K</span><span
+                                        class="mclose">)</span></span></span></span></span> 中尽可能多得找出有限阶元素. 能否写出所有可能的有限阶元素?
+                </p>
+            </div>
+        </div></main>
         <footer>
             <hr>
             <p>Copyright &copy;2024-2025 Yuang Lu et al. All rights reserved.</p>
